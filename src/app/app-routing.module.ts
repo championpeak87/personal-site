@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: 'about',
-    redirectTo: "#"
+    component: AppComponent
   },
   {
     path: 'exp',
-    redirectTo: "#"
+    component: AppComponent
   },
   {
     path: 'dev',
-    redirectTo: "#"
+    component: AppComponent
+  },
+  {
+    path: 'contact',
+    component: AppComponent
   }
 ];
 

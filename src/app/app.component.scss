@@ -9,10 +9,14 @@ app-nav-bar {
     justify-content: center;
     width: 100px;
     z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
 
 article {
     width: 100%;
+    margin-left: 100px;
 }
 
 app-header-name {
