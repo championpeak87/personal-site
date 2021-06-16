@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+
+app-nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    z-index: 2;
+}
+
+article {
+    width: 100%;
+}
+
+app-header-name {
+    margin: 50px;
+}
+
+section {
+    height: 220%;
+}

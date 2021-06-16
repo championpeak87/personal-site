@@ -1,0 +1,22 @@
+.wrapper, .subheader-container, .subheader {
+    font-family: "Raleway", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b;
+    padding: 10px;
+}
+
+.subheader-container, .subheader {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.subheader-container {
+    margin: 10px 20px;
+}
+
+.subheader {
+    display: inline-block;
+    color: #0563bb;
+}

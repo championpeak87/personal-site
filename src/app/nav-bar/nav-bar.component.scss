@@ -1,0 +1,73 @@
+ul {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.nav-btn {
+    display: inline-block;
+    list-style: none;
+    background: #f2f3f5;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    overflow-x: hidden;
+
+    transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform;
+}
+
+.nav-btn a {
+    color: #45505b;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-btn i {
+    font-size: 1.3em;
+}
+
+.nav-btn i::after {
+    content: '     ';
+}
+
+.nav-btn b {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+    color: transparent;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(to right, #0563bb, #0883f6);
+    width: 200px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.nav-btn:hover i{
+    color: white;
+}
+
+.nav-btn:hover b{
+    color: white;
+    display: inline-block;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5px;
+}
+
+li {
+    margin: 5px 0px;
+}
+
+.nav-btn-active {
+    background: linear-gradient(to right, #0563bb, #0883f6);
+}
+
+.nav-btn-active i {
+    color: white;
+}
