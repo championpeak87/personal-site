@@ -15,27 +15,27 @@ export class NavBarComponent implements OnInit {
 
   public goHome() {
     this.router.navigate(['/']);
-    document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
   }
 
   public goAbout() {
     this.router.navigate(['/about']);
-    document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
   }
 
   public goDev() {
     this.router.navigate(['/dev']);
-    document.getElementById('dev').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('dev').scrollIntoView({ behavior: 'smooth' });
   }
 
   public goExp() {
     this.router.navigate(['/exp']);
-    document.getElementById('exp').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('exp').scrollIntoView({ behavior: 'smooth' });
   }
 
   public goContact() {
     this.router.navigate(['/contact']);
-    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-  
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+
   }
 }

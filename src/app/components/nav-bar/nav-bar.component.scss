@@ -7,17 +7,23 @@ ul {
     display: inline-block;
     list-style: none;
     background: #f2f3f5;
+    @media (prefers-color-scheme: dark) {
+        background-color: #4e5269;
+    }
     padding: 20px;
     width: 25px;
     height: 25px;
     border-radius: 50px;
     overflow-x: hidden;
 
-    transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform;
+    transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform, ease 0.5s background;
 }
 
 .nav-btn a {
     color: #45505b;
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
     text-decoration: none;
     white-space: nowrap;
 }
@@ -27,27 +33,29 @@ ul {
 }
 
 .nav-btn i::after {
-    content: '     ';
+    content: "     ";
 }
 
 .nav-btn b {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
     display: none;
     color: transparent;
 }
 
 .nav-btn:hover {
-    background: linear-gradient(to right, #0563bb, #0883f6);
+    // background: linear-gradient(to right, #0563bb, #0883f6);
+    background: #0563bb;
     width: 200px;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.nav-btn:hover i{
+.nav-btn:hover i {
     color: white;
 }
 
-.nav-btn:hover b{
+.nav-btn:hover b {
     color: white;
     display: inline-block;
 }
@@ -65,7 +73,8 @@ li {
 }
 
 .nav-btn-active {
-    background: linear-gradient(to right, #0563bb, #0883f6);
+    // background: linear-gradient(to right, #0563bb, #0883f6);
+    background: #0563bb;
 }
 
 .nav-btn-active i {

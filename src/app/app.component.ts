@@ -33,43 +33,43 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/']);
     }
 
-    if (home_pos.top < window.innerHeight && home_pos.bottom >= 0) {
+    else if (home_pos.top < window.innerHeight && home_pos.bottom >= 0) {
       this.router.navigate(['/']);
     }
 
     // checking home section
-    if (about_pos.top >= 0 && about_pos.bottom <= window.innerHeight) {
+    else if (about_pos.top >= 0 && about_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/about']);
     }
 
-    if (about_pos.top < window.innerHeight && about_pos.bottom >= 0) {
+    else if (about_pos.top < window.innerHeight && about_pos.bottom >= 0) {
       this.router.navigate(['/about']);
     }
 
     // checking home section
-    if (exp_pos.top >= 0 && exp_pos.bottom <= window.innerHeight) {
+    else if (exp_pos.top >= 0 && exp_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/exp']);
     }
 
-    if (exp_pos.top < window.innerHeight && exp_pos.bottom >= 0) {
+    else if (exp_pos.top < window.innerHeight && exp_pos.bottom >= 0) {
       this.router.navigate(['/exp']);
     }
 
     // checking home section
-    if (dev_pos.top >= 0 && dev_pos.bottom <= window.innerHeight) {
+    else if (dev_pos.top >= 0 && dev_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/dev']);
     }
 
-    if (dev_pos.top < window.innerHeight && dev_pos.bottom >= 0) {
+    else if (dev_pos.top < window.innerHeight && dev_pos.bottom >= 0) {
       this.router.navigate(['/dev']);
     }
 
     // checking home section
-    if (contact_pos.top >= 0 && contact_pos.bottom <= window.innerHeight) {
+    else if (contact_pos.top >= 0 && contact_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/contact']);
     }
 
-    if (contact_pos.top < window.innerHeight && contact_pos.bottom >= 0) {
+    else if (contact_pos.top < window.innerHeight && contact_pos.bottom >= 0) {
       this.router.navigate(['/contact']);
     }
   }

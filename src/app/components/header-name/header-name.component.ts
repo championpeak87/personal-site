@@ -15,7 +15,7 @@ export class HeaderNameComponent implements OnInit {
       strings: ['Web developer', 'Android developer', 'Angular developer', 'Java developer'],
       typeSpeed: 100,
       backSpeed: 100,
-      backDelay: 2000,
+      backDelay: 5000,
       showCursor: true,
       loop: true
     };
