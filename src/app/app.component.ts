@@ -9,13 +9,9 @@ import { PageScrollService } from 'ngx-page-scroll-core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'cv-site';
-
   constructor(private router: Router) { }
 
-  public ngOnInit() { }
-
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+  scroll = () => {
     const home = document.getElementById('home');
     const about = document.getElementById('about');
     const exp = document.getElementById('exp');
@@ -73,4 +69,12 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/contact']);
     }
   }
+
+  public ngOnInit() {
+    window.addEventListener("scroll", this.scroll, true);
+  }
+
+  // @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+  //   this.scroll();
+  // }
 }
