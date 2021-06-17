@@ -36,6 +36,10 @@ export class NavBarComponent implements OnInit {
   public goContact() {
     this.router.navigate(['/contact']);
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
 
+  public goEdu() {
+    this.router.navigate(['/edu']);
+    document.getElementById('edu').scrollIntoView({behavior: 'smooth'});
   }
 }

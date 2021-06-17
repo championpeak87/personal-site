@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as AOS from 'aos';
+import * as lodash from 'lodash';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   scroll = () => {
+    console.log("SCROLL")
     const home = document.getElementById('home');
     const about = document.getElementById('about');
     const exp = document.getElementById('exp');
@@ -70,7 +72,7 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {
-    //window.addEventListener("scroll", this.scroll, true);
     AOS.init();
-  }
+    window.addEventListener("scroll", lodash.throttle(this.scroll, 1000), true);
+  }  
 }

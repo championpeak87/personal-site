@@ -2,6 +2,24 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="copyright" datatype="html">
+        <source>© Copyright Kamil Lihan. All Rights Reserved </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">A copyright message</note>
+        <note priority="1" from="meaning">copyright</note>
+      </trans-unit>
+      <trans-unit id="develop-framework" datatype="html">
+        <source>Developed in Angular framework</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Developed in angular message</note>
+        <note priority="1" from="meaning">developed</note>
+      </trans-unit>
       <trans-unit id="subheader-prefix" datatype="html">
         <source>I am </source>
         <context-group purpose="location">
@@ -29,11 +47,20 @@
         <note priority="1" from="description">An about navigation menu item</note>
         <note priority="1" from="meaning">about</note>
       </trans-unit>
+      <trans-unit id="edu-nav" datatype="html">
+        <source>Education</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">An education navigation menu item</note>
+        <note priority="1" from="meaning">education</note>
+      </trans-unit>
       <trans-unit id="exp-nav" datatype="html">
         <source>Working experience</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
-          <context context-type="linenumber">9,10</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
         <note priority="1" from="description">A working experience navigation menu item</note>
         <note priority="1" from="meaning">working experience</note>
@@ -42,7 +69,7 @@
         <source>Dev stack</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
         <note priority="1" from="description">A dev stack navigation menu item</note>
         <note priority="1" from="meaning">dev stack</note>
@@ -51,7 +78,7 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">A contact navigation menu item</note>
         <note priority="1" from="meaning">contact</note>
@@ -64,6 +91,78 @@
         </context-group>
         <note priority="1" from="description">Header in about section</note>
         <note priority="1" from="meaning">about header</note>
+      </trans-unit>
+      <trans-unit id="birthday-li" datatype="html">
+        <source>Birthday: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Date of birth</note>
+        <note priority="1" from="meaning">born date</note>
+      </trans-unit>
+      <trans-unit id="website-li" datatype="html">
+        <source>Website: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Website</note>
+        <note priority="1" from="meaning">website link</note>
+      </trans-unit>
+      <trans-unit id="phone-li" datatype="html">
+        <source>Phone: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Personal phone</note>
+        <note priority="1" from="meaning">phone</note>
+      </trans-unit>
+      <trans-unit id="city-li" datatype="html">
+        <source>City: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">City</note>
+        <note priority="1" from="meaning">city</note>
+      </trans-unit>
+      <trans-unit id="age-li" datatype="html">
+        <source>Age: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Age</note>
+        <note priority="1" from="meaning">age</note>
+      </trans-unit>
+      <trans-unit id="degree-li" datatype="html">
+        <source>Degree: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Education, degree</note>
+        <note priority="1" from="meaning">degree</note>
+      </trans-unit>
+      <trans-unit id="email-li" datatype="html">
+        <source>Email: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Personal email</note>
+        <note priority="1" from="meaning">email</note>
+      </trans-unit>
+      <trans-unit id="education-header" datatype="html">
+        <source>My education</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/education-section/education-section.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">An education header</note>
+        <note priority="1" from="meaning">education</note>
       </trans-unit>
     </body>
   </file>

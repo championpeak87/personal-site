@@ -72,6 +72,106 @@
         <note priority="1" from="description">Header in about section</note>
         <note priority="1" from="meaning">about header</note>
       </trans-unit>
+      <trans-unit id="birthday-li" datatype="html">
+        <source>Birthday: </source>
+        <target>Dátum narodenia: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Date of birth</note>
+        <note priority="1" from="meaning">born date</note>
+      </trans-unit>
+      <trans-unit id="website-li" datatype="html">
+        <source>Website: </source>
+        <target>Webová stránka: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Website</note>
+        <note priority="1" from="meaning">website link</note>
+      </trans-unit>
+      <trans-unit id="phone-li" datatype="html">
+        <source>Phone: </source>
+        <target>Telefón: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Personal phone</note>
+        <note priority="1" from="meaning">phone</note>
+      </trans-unit>
+      <trans-unit id="city-li" datatype="html">
+        <source>City: </source>
+        <target>Mesto: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">City</note>
+        <note priority="1" from="meaning">city</note>
+      </trans-unit>
+      <trans-unit id="age-li" datatype="html">
+        <source>Age: </source>
+        <target>Vek: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Age</note>
+        <note priority="1" from="meaning">age</note>
+      </trans-unit>
+      <trans-unit id="degree-li" datatype="html">
+        <source>Degree: </source>
+        <target>Titul: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Education, degree</note>
+        <note priority="1" from="meaning">degree</note>
+      </trans-unit>
+      <trans-unit id="email-li" datatype="html">
+        <source>Email: </source>
+        <target>Email: </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/about-section/about-section.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Personal email</note>
+        <note priority="1" from="meaning">email</note>
+      </trans-unit>
+      <trans-unit id="edu-nav" datatype="html">
+        <source>Education</source>
+        <target>Vzdelanie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">An education navigation menu item</note>
+        <note priority="1" from="meaning">education</note>
+      </trans-unit>
+      <trans-unit id="copyright" datatype="html">
+        <source>© Copyright Kamil Lihan. All Rights Reserved </source>
+        <target>© Copyright Kamil Lihan. Všetky práva vyhradené </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">A copyright message</note>
+        <note priority="1" from="meaning">copyright</note>
+      </trans-unit>
+      <trans-unit id="develop-framework" datatype="html">
+        <source>Developed in Angular framework</source>
+        <target>Na vývoj tento stránky bol použitý framework Angular</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Developed in angular message</note>
+        <note priority="1" from="meaning">developed</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

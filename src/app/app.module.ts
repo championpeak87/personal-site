@@ -10,6 +10,7 @@ import { AboutSectionComponent } from './sections/about-section/about-section.co
 import { ExpSectionComponent } from './sections/exp-section/exp-section.component';
 import { DevSectionComponent } from './sections/dev-section/dev-section.component';
 import { ContactSectionComponent } from './sections/contact-section/contact-section.component';
+import { EducationSectionComponent } from './sections/education-section/education-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactSectionComponent } from './sections/contact-section/contact-sect
     AboutSectionComponent,
     ExpSectionComponent,
     DevSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    EducationSectionComponent
   ],
   imports: [
     BrowserModule,

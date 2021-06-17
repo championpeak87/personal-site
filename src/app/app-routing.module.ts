@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: AppComponent
+  },
+  {
+    path: 'edu',
+    component: AppComponent
   }
 ];
 
