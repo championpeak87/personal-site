@@ -16,7 +16,7 @@ ul {
     border-radius: 50px;
     overflow-x: hidden;
     overflow-y: hidden;
-
+    opacity: 0.8;
     transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform, ease 0.5s background;
 }
 
@@ -51,6 +51,7 @@ ul {
     width: 200px;
     cursor: pointer;
     transform: scale(1.1);
+    opacity: 1;
 }
 
 .nav-btn:hover i {

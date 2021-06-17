@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-body, html {
+body,
+html {
     overflow: overlay;
     height: 100%;
     margin: 0;
@@ -9,15 +10,29 @@ body, html {
         background-color: white;
         color: black;
     }
-    
+
     @media (prefers-color-scheme: dark) {
         background-color: #282a35;
         color: white;
     }
 }
 
+html {
+    // Firefox custom scrollbar
+    @media (prefers-color-scheme: dark) {
+        scrollbar-color: #494d62 transparent;
+        scrollbar-width: normal;
+    }
+
+    @media (prefers-color-scheme: light) {
+        scrollbar-color: lightgray transparent;
+        scrollbar-width: thin;
+    }
+}
+
 ::-webkit-scrollbar {
     background: transparent;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,5 +45,4 @@ body, html {
     }
 
     border-radius: 50px;
-    width: 10px;
 }

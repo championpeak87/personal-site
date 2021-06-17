@@ -55,3 +55,20 @@
         text-shadow: 3px 3px 3px whitesmoke;
     }
 }
+
+@keyframes zoomin {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateX(+250px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
+
+.wrapper {
+    opacity: 0;
+    animation: zoomin ease 1s forwards;
+    animation-delay: 0.5s;
+}

@@ -16,17 +16,20 @@ app-nav-bar {
 
 article {
     width: 100%;
-    margin-left: 100px;
+}
+
+article > * {
+    padding-left: 100px;
 }
 
 app-header-name {
     margin: 50px;
 }
 
-section {
-    height: 220%;
-}
-
 #home {
     height: 900px;
+}
+
+#about {
+    background-color: #575b74;
 }

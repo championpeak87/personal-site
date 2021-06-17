@@ -1,7 +1,6 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PageScrollService } from 'ngx-page-scroll-core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -71,10 +70,7 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit() {
-    window.addEventListener("scroll", this.scroll, true);
+    //window.addEventListener("scroll", this.scroll, true);
+    AOS.init();
   }
-
-  // @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
-  //   this.scroll();
-  // }
 }
