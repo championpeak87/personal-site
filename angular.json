@@ -13,6 +13,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "sk": "src/locale/messages.sk.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -33,6 +39,9 @@
             "scripts": []
           },
           "configurations": {
+            "sk": {
+              "localize": ["sk"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -70,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "cv-site:build:production"
+            },
+            "sk": {
+              "browserTarget": "cv-site:build:sk"
             }
           }
         },

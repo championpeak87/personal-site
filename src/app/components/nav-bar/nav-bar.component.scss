@@ -15,6 +15,7 @@ ul {
     height: 25px;
     border-radius: 50px;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform, ease 0.5s background;
 }
@@ -44,6 +45,7 @@ ul {
 }
 
 .nav-btn:hover {
+    // No interpolation for linear gradient!!!
     // background: linear-gradient(to right, #0563bb, #0883f6);
     background: #0563bb;
     width: 200px;
