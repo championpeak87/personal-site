@@ -15,12 +15,14 @@ export class AppComponent implements OnInit {
     console.log("SCROLL")
     const home = document.getElementById('home');
     const about = document.getElementById('about');
+    const edu = document.getElementById('edu');
     const exp = document.getElementById('exp');
     const dev = document.getElementById('dev');
     const contact = document.getElementById('contact');
 
     const home_pos = home.getBoundingClientRect();
     const about_pos = about.getBoundingClientRect();
+    const edu_pos = edu.getBoundingClientRect();
     const exp_pos = exp.getBoundingClientRect();
     const dev_pos = dev.getBoundingClientRect();
     const contact_pos = contact.getBoundingClientRect();
@@ -32,6 +34,15 @@ export class AppComponent implements OnInit {
 
     else if (home_pos.top < window.innerHeight && home_pos.bottom >= 0) {
       this.router.navigate(['/']);
+    }
+
+    // checking home section
+    if (edu_pos.top >= 0 && edu_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/edu']);
+    }
+
+    else if (edu_pos.top < window.innerHeight && edu_pos.bottom >= 0) {
+      this.router.navigate(['/edu']);
     }
 
     // checking home section

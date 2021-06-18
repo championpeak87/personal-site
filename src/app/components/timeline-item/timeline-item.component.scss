@@ -4,9 +4,15 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    transition: ease 0.5s background-color;
 
     width: 300px;
-    background: #f5f4f1;
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(to right, #f5f4f1, #c3c2c0);
+    }
+    @media (prefers-color-scheme: light) {
+        background: linear-gradient(to right, #575b74, #3a3c4d);
+    }
 
     @media (prefers-color-scheme: dark) {
         box-shadow: 5px 5px 12px -2px gray;
@@ -19,8 +25,14 @@
 }
 
 .content {
-    color: #45505b;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media (prefers-color-scheme: dark) {
+        color: #45505b;
+    }
+    @media (prefers-color-scheme: light) {
+        color: white;
+    }
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
     padding: 5px 0px;
 }
 
@@ -28,7 +40,12 @@
     height: 0px;
     width: 0px;
     transform: translateX(-40px);
-    border-right: 20px solid #f5f4f1;
+    @media (prefers-color-scheme: dark) {
+        border-right: 20px solid #f5f4f1;
+    }
+    @media (prefers-color-scheme: light) {
+        border-right: 20px solid #575b74;
+    }
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
 }
@@ -37,15 +54,24 @@
     height: 0px;
     width: 0px;
     transform: translateX(+300px);
-    border-left: 20px solid #f5f4f1;
+    @media (prefers-color-scheme: dark) {
+        border-left: 20px solid #f5f4f1;
+    }
+    @media (prefers-color-scheme: light) {
+        border-left: 20px solid #575b74;
+    }
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     position: absolute;
-    
 }
 
 .left-marker {
-    background-color: white;
+    @media (prefers-color-scheme: dark) {
+        background-color: #f5f4f1;
+    }
+    @media (prefers-color-scheme: light) {
+        background-color: #575b74;
+    }
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -54,7 +80,12 @@
 }
 
 .right-marker {
-    background-color: white;
+    @media (prefers-color-scheme: dark) {
+        background-color: #f5f4f1;
+    }
+    @media (prefers-color-scheme: light) {
+        background-color: #575b74;
+    }
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -67,7 +98,7 @@
     margin: 5px 0px;
 }
 
-.header{
+.header {
     margin: 5px 0px;
 }
 
