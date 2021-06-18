@@ -9,11 +9,19 @@ export class TimelineItemComponent implements OnInit {
   @Input('timestamp') public timestamp: string;
   @Input('header') public header: string;
   @Input('message') public message: string;
-  @Input('flipPosition') public flipPosition: boolean;
+  @Input('barPosition') public barPosition: BarPosition;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log("BAR POSITION " + this.barPosition);
   }
 
 }
+
+export enum BarPosition {
+  UP = "UP",
+  DOWN = "DOWN",
+  LEFT = "LEFT",
+  RIGHT = "RIGHT"
+};

@@ -1,7 +1,19 @@
-<div class="timeline">
-    <div class="vertical-timeline"></div>
-    <div class="timeline-content">
-        <app-timeline-item *ngFor="let item of items" [timestamp]="item.timestamp" [header]="item.header" [message]="item.message" [flipPosition]="false">
+<div *ngIf="getOrientation()" class="timeline-horizontal">
+    <div class="timeline-horizontalbar"></div>
+    <div class="timeline-horizontalcontent">
+        <app-timeline-item *ngFor="let item of items" [timestamp]="item.timestamp" [header]="item.header"
+            [message]="item.message" [barPosition]="orientation == 'HORIZONTAL_UPPER' ? 'UP' : 'DOWN'">
+        </app-timeline-item>
+    </div>
+</div>
+
+<div *ngIf="!getOrientation()"
+    class="timeline-vertical">
+    <div class="timeline-verticalbar"></div>
+    <div class="timeline-verticalcontent">
+        <app-timeline-item *ngFor="let item of items" [timestamp]="item.timestamp" [header]="item.header"
+            [message]="item.message"
+            [barPosition]="orientation == 'VERTICAL_LEFT' ? 'LEFT' : 'RIGHT'">
         </app-timeline-item>
     </div>
 </div>

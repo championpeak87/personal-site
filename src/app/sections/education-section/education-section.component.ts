@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TimelineItem } from 'src/app/components/timeline/timeline-item';
+import { TimelineOrientation } from 'src/app/components/timeline/timeline.component';
+import * as lodash from 'lodash';
 
 @Component({
   selector: 'app-education-section',
@@ -8,86 +10,45 @@ import { TimelineItem } from 'src/app/components/timeline/timeline-item';
 })
 export class EducationSectionComponent implements OnInit {
   public educationHistory: TimelineItem[] = [{
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2017 - june 2020',
+    header: "FIIT STU",
     message: "Lorem ipsum"
   }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2013 - june 2017',
+    header: "Gymnázium Dominika Tatarku, Poprad",
     message: "Lorem ipsum"
   }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2017 - june 2020',
+    header: "FIIT STU",
     message: "Lorem ipsum"
   }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2013 - june 2017',
+    header: "Gymnázium Dominika Tatarku, Poprad",
     message: "Lorem ipsum"
   }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2017 - june 2020',
+    header: "FIIT STU",
     message: "Lorem ipsum"
   }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: '1.1.1990',
-    header: "Gymnázium",
+    timestamp: 'september 2013 - june 2017',
+    header: "Gymnázium Dominika Tatarku, Poprad",
     message: "Lorem ipsum"
   }];
+
+  public timelineOrientation: TimelineOrientation = TimelineOrientation.VERTICAL_RIGHT;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    // lodash.throttle(() => {
+      if (window.innerWidth < 1100)
+        this.timelineOrientation = TimelineOrientation.VERTICAL_RIGHT;
+      else
+        this.timelineOrientation = TimelineOrientation.HORIZONTAL_LOWER;
+    // }, 200);
+  }
 }

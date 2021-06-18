@@ -8,11 +8,21 @@
 .left {
     height: 2px;
     width: 500px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    }
+    @media (prefers-color-scheme: light) {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), #575b74);
+    }
 }
 
 .right {
     height: 2px;
     width: 500px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    }
+    @media (prefers-color-scheme: light) {
+        background: linear-gradient(to right, #575b74, rgba(0, 0, 0, 0));
+    }
 }

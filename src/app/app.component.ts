@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   scroll = () => {
-    console.log("SCROLL")
     const home = document.getElementById('home');
     const about = document.getElementById('about');
     const edu = document.getElementById('edu');

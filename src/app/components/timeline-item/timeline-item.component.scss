@@ -6,12 +6,12 @@
     align-items: center;
     transition: ease 0.5s background-color;
 
-    width: 300px;
+    width: 500px;
     @media (prefers-color-scheme: dark) {
-        background: linear-gradient(to right, #f5f4f1, #c3c2c0);
+        background: linear-gradient(to right, #f5f4f1 60%, #c3c2c0);
     }
     @media (prefers-color-scheme: light) {
-        background: linear-gradient(to right, #575b74, #3a3c4d);
+        background: linear-gradient(to right, #575b74 60%, #3a3c4d);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -21,7 +21,7 @@
         box-shadow: 5px 5px 12px -2px gray;
     }
     border-radius: 10px;
-    margin: 20px 0px;
+    margin: 40px 20px;
 }
 
 .content {
@@ -36,66 +36,132 @@
     padding: 5px 0px;
 }
 
-.left-triangle {
-    height: 0px;
-    width: 0px;
-    transform: translateX(-40px);
-    @media (prefers-color-scheme: dark) {
-        border-right: 20px solid #f5f4f1;
+.left {
+    &-triangle {
+        height: 0px;
+        width: 0px;
+        transform: translateX(-40px);
+        @media (prefers-color-scheme: dark) {
+            border-right: 20px solid #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            border-right: 20px solid #575b74;
+        }
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
     }
-    @media (prefers-color-scheme: light) {
-        border-right: 20px solid #575b74;
+
+    &-marker {
+        @media (prefers-color-scheme: dark) {
+            background-color: #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            background-color: #575b74;
+        }
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+
+        transform: translateX(-71px);
     }
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
 }
 
-.right-triangle {
-    height: 0px;
-    width: 0px;
-    transform: translateX(+300px);
-    @media (prefers-color-scheme: dark) {
-        border-left: 20px solid #f5f4f1;
+.right {
+    &-triangle {
+        height: 0px;
+        width: 0px;
+        transform: translateX(+300px);
+        @media (prefers-color-scheme: dark) {
+            border-left: 20px solid #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            border-left: 20px solid #575b74;
+        }
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
     }
-    @media (prefers-color-scheme: light) {
-        border-left: 20px solid #575b74;
+
+    &-marker {
+        @media (prefers-color-scheme: dark) {
+            background-color: #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            background-color: #575b74;
+        }
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(351px);
     }
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    position: absolute;
 }
 
-.left-marker {
-    @media (prefers-color-scheme: dark) {
-        background-color: #f5f4f1;
+.upper {
+    &-triangle {
+        height: 0px;
+        width: 0px;
+        align-self: flex-start;
+        transform: translate(200px, -20px);
+        @media (prefers-color-scheme: dark) {
+            border-bottom: 20px solid #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            border-bottom: 20px solid #575b74;
+        }
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
     }
-    @media (prefers-color-scheme: light) {
-        background-color: #575b74;
-    }
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
 
-    transform: translateX(-51px);
+    &-marker {
+        align-self: flex-start;
+        @media (prefers-color-scheme: dark) {
+            background-color: #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            background-color: #575b74;
+        }
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+
+        transform: translate(231px, -68px);
+    }
 }
 
-.right-marker {
-    @media (prefers-color-scheme: dark) {
-        background-color: #f5f4f1;
+.bottom {
+    &-triangle {height: 0px;
+        width: 0px;
+        align-self: flex-end;
+        transform: translate(130px, +20px);
+        @media (prefers-color-scheme: dark) {
+            border-top: 20px solid #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            border-top: 20px solid #575b74;
+        }
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
     }
-    @media (prefers-color-scheme: light) {
-        background-color: #575b74;
+
+    &-marker {
+        @media (prefers-color-scheme: dark) {
+            background-color: #f5f4f1;
+        }
+        @media (prefers-color-scheme: light) {
+            background-color: #575b74;
+        }
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+
+        transform: translateX(-51px);
     }
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    position: absolute;
-    transform: translateX(351px);
 }
 
 .timestamp {
     display: block;
     margin: 5px 0px;
+    font-size: 14px;
 }
 
 .header {

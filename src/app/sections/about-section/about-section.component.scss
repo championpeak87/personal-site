@@ -45,3 +45,10 @@ p, li, a, i {
     max-width: 700px;
     flex-grow: 3;
 }
+
+.horizontal-split {
+    height: 2px;
+    width: 1000px;
+    background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+    margin: 10px auto;
+}

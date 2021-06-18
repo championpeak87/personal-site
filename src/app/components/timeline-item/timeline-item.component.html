@@ -1,13 +1,22 @@
 <div class="wrapper">
-    <div *ngIf="!flipPosition" class="left-marker">
+
+    <div *ngIf="barPosition == 'RIGHT'" class="left-marker">
     </div>
-    <div *ngIf="!flipPosition" class="left-triangle"></div>
+    <div *ngIf="barPosition == 'RIGHT'" class="left-triangle"></div>
+
+    <div *ngIf="barPosition == 'DOWN'" class="upper-marker"></div>
+    <div *ngIf="barPosition == 'DOWN'" class="upper-triangle"></div>
+
     <div class="content">
         <h1 class="timestamp">{{ timestamp }}</h1>
         <h1 class="header">{{ header }}</h1>
         <p class="message">{{ message }}</p>
     </div>
-    <div *ngIf="flipPosition" class="right-triangle"></div>
-    <div *ngIf="flipPosition" class="right-marker">
+
+    <div *ngIf="barPosition == 'UP'" class="bottom-marker"></div>
+    <div *ngIf="barPosition == 'UP'" class="bottom-triangle"></div>
+
+    <div *ngIf="barPosition == 'LEFT'" class="right-triangle"></div>
+    <div *ngIf="barPosition == 'LEFT'" class="right-marker">
     </div>
 </div>
