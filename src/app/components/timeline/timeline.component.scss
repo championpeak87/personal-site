@@ -9,10 +9,10 @@
 .vertical-timeline {
     width: 3px;
     @media (prefers-color-scheme: dark) {
-        background-color: #f5f4f1;
+        background: linear-gradient(to bottom, transparent 0%, #f5f4f1 10%, #f5f4f1 90%, transparent 100%);
     }
     @media (prefers-color-scheme: light) {
-        background-color: #575b74;
+        background: linear-gradient(to bottom, transparent 0%, #575b74 10%, #575b74 90%, transparent 100%);
     }
     border-radius: 3px;
     margin: 10px 40px;

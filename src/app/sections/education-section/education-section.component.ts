@@ -19,6 +19,70 @@ export class EducationSectionComponent implements OnInit {
     timestamp: '1.1.1990',
     header: "Gymnázium",
     message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
+  }, {
+    timestamp: '1.1.1990',
+    header: "Gymnázium",
+    message: "Lorem ipsum"
   }];
 
   constructor() { }
