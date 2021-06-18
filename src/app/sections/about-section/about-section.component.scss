@@ -10,6 +10,7 @@ h1 {
     font-size: 3em;
     padding-top: 20px;
     color: white;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -21,7 +22,26 @@ ul {
     margin: auto;
 }
 
-p, li, a {
+p, li, a, i {
     font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
     color: white;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personal-info i {
+    max-width: 120px;
+    font-size: 128px;
+    flex-grow: 1;
+}
+
+.personal-info ul {
+    min-width: 500px;
+    max-width: 700px;
+    flex-grow: 3;
 }

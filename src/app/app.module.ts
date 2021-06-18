@@ -11,6 +11,9 @@ import { ExpSectionComponent } from './sections/exp-section/exp-section.componen
 import { DevSectionComponent } from './sections/dev-section/dev-section.component';
 import { ContactSectionComponent } from './sections/contact-section/contact-section.component';
 import { EducationSectionComponent } from './sections/education-section/education-section.component';
+import { HorizontalSplitComponent } from './components/horizontal-split/horizontal-split.component';
+import { TimelineItemComponent } from './components/timeline-item/timeline-item.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EducationSectionComponent } from './sections/education-section/educatio
     ExpSectionComponent,
     DevSectionComponent,
     ContactSectionComponent,
-    EducationSectionComponent
+    EducationSectionComponent,
+    HorizontalSplitComponent,
+    TimelineItemComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

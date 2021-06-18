@@ -1,0 +1,7 @@
+<div class="timeline">
+    <div class="vertical-timeline"></div>
+    <div class="timeline-content">
+        <app-timeline-item *ngFor="let item of items" [timestamp]="item.timestamp" [header]="item.header" [message]="item.message" [flipPosition]="false">
+        </app-timeline-item>
+    </div>
+</div>
