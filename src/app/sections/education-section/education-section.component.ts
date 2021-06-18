@@ -40,15 +40,20 @@ export class EducationSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.checkOrientation();
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     // lodash.throttle(() => {
-      if (window.innerWidth < 1100)
-        this.timelineOrientation = TimelineOrientation.VERTICAL_RIGHT;
-      else
-        this.timelineOrientation = TimelineOrientation.HORIZONTAL_LOWER;
+    this.checkOrientation();
     // }, 200);
+  }
+
+  private checkOrientation() {
+    if (window.innerWidth < 1100)
+      this.timelineOrientation = TimelineOrientation.VERTICAL_RIGHT;
+    else
+      this.timelineOrientation = TimelineOrientation.HORIZONTAL_LOWER;
   }
 }
