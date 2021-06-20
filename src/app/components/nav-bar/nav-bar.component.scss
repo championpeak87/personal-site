@@ -59,10 +59,6 @@ ul li {
         sans-serif;
     display: none;
     color: transparent;
-    @media screen and (max-width: 1100px) {
-        writing-mode: sideways-rl;
-        padding: 10px 0px;
-    }
 }
 
 .nav-btn:hover {
@@ -77,7 +73,6 @@ ul li {
     opacity: 1;
     @media screen and (max-width: 1100px) {
         margin: 10px 5px;
-        height: 150px;
     }
 }
 
@@ -88,6 +83,9 @@ ul li {
 .nav-btn:hover b {
     color: white;
     display: inline-block;
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
 
 ul {
