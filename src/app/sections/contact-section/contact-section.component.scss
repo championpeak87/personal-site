@@ -3,7 +3,7 @@
 }
 
 h1 {
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
@@ -33,5 +33,98 @@ h1 {
 }
 
 .header i::after {
-    content: '   ';
+    content: "   ";
+}
+
+.form-wrapper {
+    background-color: white;
+    box-shadow: 5px 5px 15px -4px black;
+    border-radius: 5px;
+    color: #575b74;
+
+    width: 850px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.form-wrapper > h1 {
+    color: #575b74;
+    font-size: 32px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    font-weight: 700;
+    margin: 0px 10px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+mat-form-field,
+textarea {
+    margin: 5px;
+}
+
+.name-wrapper > mat-form-field {
+    flex-grow: 1;
+}
+
+#name {
+}
+
+#lastname {
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.message-split {
+    padding: 15px;
+}
+
+.form-controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.form-controls > button {
+    background: #0563bb;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px -4px black;
+    font-size: 16px;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: ease 0.5s background-color, ease 0.5s transform;
+    width: 100px;
+}
+
+.form-controls > button:hover {
+    background: #044f95;
+}
+
+.form-controls > button:active {
+    transform: scale(0.9);
 }

@@ -4,7 +4,42 @@
         <h1 i18n="contact header|Header in contact section@@contact-head">Contact me</h1>
         <div class="horizontal-split"></div>
     </div>
-    <form>
+    <div class="form-wrapper">
+        <h1>Contact form</h1>
+        <hr>
+        <form [formGroup]="contactFormGroup" (ngSubmit)="onSubmit()">
+            <div class="form-content">
+                <div class="message-split">
+                    <div class="name-wrapper">
+                        <mat-form-field appearance="fill" [color]="'#575b74'" id="name">
+                            <mat-label>Name</mat-label>
+                            <input matInput type="text" formControlName="name" required>
+                            <mat-error>Name is required</mat-error>
+                        </mat-form-field>
 
-    </form>
+                        <mat-form-field appearance="fill" [color]="'#575b74'" id="lastname">
+                            <mat-label>Last name</mat-label>
+                            <input matInput type="text" formControlName="lastname" required>
+                            <mat-error>Last name is required</mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <mat-form-field appearance="fill" [color]="'#575b74'" id="email">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="text" formControlName="email" required>
+                        <mat-error>Email is required</mat-error>
+                    </mat-form-field>
+                </div>
+
+                <mat-form-field appearance="fill" [color]="'pink'" id="message">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput type="text" formControlName="message" required></textarea>
+                    <mat-error>Message is required</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-controls">
+                <button type="submit" disabled>Send</button>
+            </div>
+        </form>
+    </div>
 </div>
