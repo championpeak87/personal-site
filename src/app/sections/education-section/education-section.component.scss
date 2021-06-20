@@ -7,7 +7,8 @@ h1 {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3em;
+    // font-size: 3em;
+    display: inline-block;
     padding-top: 20px;
     @media (prefers-color-scheme: dark) {
         color: white;
@@ -20,4 +21,22 @@ h1 {
 
 app-timeline {
     margin: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 3em;
+}
+
+.header i {
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+    @media (prefers-color-scheme: light) {
+        color: #45505b;
+    }
+}
+
+.header i::after {
+    content: '   ';
 }

@@ -7,10 +7,11 @@ h1 {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3em;
+    // font-size: 3em;
     padding-top: 20px;
     color: white;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 ul {
@@ -48,7 +49,16 @@ p, li, a, i {
 
 .horizontal-split {
     height: 2px;
-    width: 1000px;
+    max-width: 1000px;
     background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
     margin: 10px auto;
+}
+
+.header {
+    text-align: center;
+    font-size: 3em;
+}
+
+.header i::after {
+    content: '   ';
 }

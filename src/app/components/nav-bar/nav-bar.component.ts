@@ -28,8 +28,8 @@ export class NavBarComponent implements OnInit {
     document.getElementById('dev').scrollIntoView({ behavior: 'smooth' });
   }
 
-  public goExp() {
-    this.router.navigate(['/exp']);
+  public goProjects() {
+    this.router.navigate(['/projects']);
     document.getElementById('exp').scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -40,6 +40,10 @@ export class NavBarComponent implements OnInit {
 
   public goEdu() {
     this.router.navigate(['/edu']);
-    document.getElementById('edu').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('edu').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  public switchLanguage() {
+    // window.document.locale = 'EN';
   }
 }

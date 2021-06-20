@@ -3,6 +3,13 @@ ul {
     padding-left: 10px;
 }
 
+ul li {
+    @media screen and (max-width: 1100px) {
+        display: inline-block;
+        margin: 10px 5px;
+    }
+}
+
 .nav-btn {
     display: inline-block;
     list-style: none;
@@ -17,7 +24,7 @@ ul {
     overflow-x: hidden;
     overflow-y: hidden;
     opacity: 0.8;
-    transition: ease 0.5s width, ease 0.5s color, ease 0.5s transform, ease 0.5s background;
+    transition: ease 0.5s width, ease 0.5s height, ease 0.5s color, ease 0.5s transform, ease 0.5s background;
 }
 
 .nav-btn a {
@@ -26,7 +33,9 @@ ul {
         color: white;
     }
     text-decoration: none;
-    white-space: nowrap;
+    @media screen and (min-width: 1100px) {
+        white-space: nowrap;
+    }
 }
 
 .nav-btn i {
@@ -42,16 +51,26 @@ ul {
         sans-serif;
     display: none;
     color: transparent;
+    @media screen and (max-width: 1100px) {
+        writing-mode: sideways-rl;
+        padding: 10px 0px;
+    }
 }
 
 .nav-btn:hover {
     // No interpolation for linear gradient!!!
     // background: linear-gradient(to right, #0563bb, #0883f6);
     background: #0563bb;
-    width: 200px;
+    @media screen and (min-width: 1100px) {
+        width: 200px;
+    }
     cursor: pointer;
     transform: scale(1.1);
     opacity: 1;
+    @media screen and (max-width: 1100px) {
+        margin: 10px 5px;
+        height: 200px;
+    }
 }
 
 .nav-btn:hover i {
@@ -66,6 +85,9 @@ ul {
 ul {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1100px) {
+        flex-direction: row;
+    }
     flex-wrap: nowrap;
     justify-content: center;
     margin: 5px;

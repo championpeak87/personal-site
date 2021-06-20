@@ -8,7 +8,7 @@ const routes: Routes = [
     component: AppComponent
   },
   {
-    path: 'exp',
+    path: 'projects',
     component: AppComponent
   },
   {

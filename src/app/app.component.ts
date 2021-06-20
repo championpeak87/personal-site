@@ -11,78 +11,97 @@ import * as lodash from 'lodash';
 export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
+  private home;
+  private about;
+  private edu;
+  private projects;
+  private dev;
+  private contact;
+
+  private home_pos;
+  private about_pos;
+  private edu_pos;
+  private projects_pos;
+  private dev_pos;
+  private contact_pos;
+
   scroll = () => {
-    const home = document.getElementById('home');
-    const about = document.getElementById('about');
-    const edu = document.getElementById('edu');
-    const exp = document.getElementById('exp');
-    const dev = document.getElementById('dev');
-    const contact = document.getElementById('contact');
-
-    const home_pos = home.getBoundingClientRect();
-    const about_pos = about.getBoundingClientRect();
-    const edu_pos = edu.getBoundingClientRect();
-    const exp_pos = exp.getBoundingClientRect();
-    const dev_pos = dev.getBoundingClientRect();
-    const contact_pos = contact.getBoundingClientRect();
+    // DIM BACKGROUND WHEN SMALL WIDTH
+    if (window.innerWidth < 1100 && window.pageYOffset > 20)
+      document.getElementById('app-nav').classList.add('dimmer');
+    else document.getElementById('app-nav').classList.remove('dimmer');
 
     // checking home section
-    if (home_pos.top >= 0 && home_pos.bottom <= window.innerHeight) {
+    if (this.home_pos.top >= 0 && this.home_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/']);
     }
 
-    else if (home_pos.top < window.innerHeight && home_pos.bottom >= 0) {
+    else if (this.home_pos.top < window.innerHeight && this.home_pos.bottom >= 0) {
       this.router.navigate(['/']);
     }
 
     // checking home section
-    if (edu_pos.top >= 0 && edu_pos.bottom <= window.innerHeight) {
+    else if (this.edu_pos.top >= 0 && this.edu_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/edu']);
     }
 
-    else if (edu_pos.top < window.innerHeight && edu_pos.bottom >= 0) {
+    else if (this.edu_pos.top < window.innerHeight && this.edu_pos.bottom >= 0) {
       this.router.navigate(['/edu']);
     }
 
     // checking home section
-    else if (about_pos.top >= 0 && about_pos.bottom <= window.innerHeight) {
+    else if (this.about_pos.top >= 0 && this.about_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/about']);
     }
 
-    else if (about_pos.top < window.innerHeight && about_pos.bottom >= 0) {
+    else if (this.about_pos.top < window.innerHeight && this.about_pos.bottom >= 0) {
       this.router.navigate(['/about']);
     }
 
     // checking home section
-    else if (exp_pos.top >= 0 && exp_pos.bottom <= window.innerHeight) {
-      this.router.navigate(['/exp']);
+    else if (this.projects_pos.top >= 0 && this.projects_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/projects']);
     }
 
-    else if (exp_pos.top < window.innerHeight && exp_pos.bottom >= 0) {
-      this.router.navigate(['/exp']);
-    }
-
-    // checking home section
-    else if (dev_pos.top >= 0 && dev_pos.bottom <= window.innerHeight) {
-      this.router.navigate(['/dev']);
-    }
-
-    else if (dev_pos.top < window.innerHeight && dev_pos.bottom >= 0) {
-      this.router.navigate(['/dev']);
+    else if (this.projects_pos.top < window.innerHeight && this.projects_pos.bottom >= 0) {
+      this.router.navigate(['/projects']);
     }
 
     // checking home section
-    else if (contact_pos.top >= 0 && contact_pos.bottom <= window.innerHeight) {
+    else if (this.dev_pos.top >= 0 && this.dev_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/dev']);
+    }
+
+    else if (this.dev_pos.top < window.innerHeight && this.dev_pos.bottom >= 0) {
+      this.router.navigate(['/dev']);
+    }
+
+    // checking home section
+    else if (this.contact_pos.top >= 0 && this.contact_pos.bottom <= window.innerHeight) {
       this.router.navigate(['/contact']);
     }
 
-    else if (contact_pos.top < window.innerHeight && contact_pos.bottom >= 0) {
+    else if (this.contact_pos.top < window.innerHeight && this.contact_pos.bottom >= 0) {
       this.router.navigate(['/contact']);
     }
   }
 
   public ngOnInit() {
+    this.home = document.getElementById('home');
+    this.about = document.getElementById('about');
+    this.edu = document.getElementById('edu');
+    this.projects = document.getElementById('projects');
+    this.dev = document.getElementById('dev');
+    this.contact = document.getElementById('contact');
+
+    this.home_pos = this.home.getBoundingClientRect();
+    this.about_pos = this.about.getBoundingClientRect();
+    this.edu_pos = this.edu.getBoundingClientRect();
+    this.projects_pos = this.projects.getBoundingClientRect();
+    this.dev_pos = this.dev.getBoundingClientRect();
+    this.contact_pos = this.contact.getBoundingClientRect();
+
     AOS.init();
-    window.addEventListener("scroll", lodash.throttle(this.scroll, 1000), true);
-  }  
+    window.addEventListener("scroll", lodash.throttle(this.scroll, 500), true);
+  }
 }

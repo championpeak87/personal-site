@@ -6,11 +6,31 @@ app-nav-bar {
     z-index: 2;
     position: fixed;
     top: 0;
-    bottom: 0;
+    @media screen and (min-width: 1100px) {
+        bottom: 0;
+    }
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: row;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;        
+    }
+
+    transition: ease .5s background-color;
 }
 
 article > * {
-    padding-left: 100px;
+    @media screen and (min-width: 1100px) {
+        padding-left: 100px;
+    }
+}
+
+article { 
+    @media screen and (max-width: 1100px) {
+        padding-top: 95px;
+    }
 }
 
 #home {
@@ -20,6 +40,10 @@ article > * {
 #about {
     background: linear-gradient(to right, #575b74, #3a3c4d);
     // background-color: #575b74;
+}
+
+#contact {
+    background: linear-gradient(to left, #575b74, #3a3c4d);
 }
 
 footer {
@@ -40,8 +64,11 @@ footer {
     margin: 15px;
 }
 
-.footer-name, .footer-copyright, .footer-angular {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.footer-name,
+.footer-copyright,
+.footer-angular {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
     @media (prefers-color-scheme: dark) {
         color: #a6bfd6;
     }
@@ -73,9 +100,12 @@ footer {
 .contact-links > a:hover {
     @media (prefers-color-scheme: dark) {
         color: #cfe5fa;
-
     }
     @media (prefers-color-scheme: light) {
         color: #6a7c8d;
     }
+}
+
+.dimmer {
+    background-color: rgba($color: rgb(42, 42, 42), $alpha: 0.6);
 }
