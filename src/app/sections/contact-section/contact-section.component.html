@@ -7,7 +7,7 @@
     <div class="form-wrapper">
         <h1>Contact form</h1>
         <hr>
-        <form [formGroup]="contactFormGroup" (ngSubmit)="onSubmit()">
+        <form (ngSubmit)="onSubmit()" [formGroup]="contactFormGroup" id="contact-form">
             <div class="form-content">
                 <div class="message-split">
                     <div class="name-wrapper">
@@ -40,7 +40,9 @@
                 </mat-form-field>
             </div>
             <div class="form-controls">
-                <button type="submit" disabled>Send</button>
+                <mat-spinner *ngIf="loading" [diameter]="20" style="margin: 10px;"></mat-spinner>
+                <span *ngIf="sent" style="margin: 10px;"><i class="bi bi-check-lg"></i>Message has been sent!</span>
+                <button type="submit">Send</button>
             </div>
         </form>
     </div>
