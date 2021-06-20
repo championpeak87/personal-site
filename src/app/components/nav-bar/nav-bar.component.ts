@@ -30,7 +30,7 @@ export class NavBarComponent implements OnInit {
 
   public goProjects() {
     this.router.navigate(['/projects']);
-    document.getElementById('exp').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
   }
 
   public goContact() {

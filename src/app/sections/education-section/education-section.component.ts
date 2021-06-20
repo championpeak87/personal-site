@@ -10,29 +10,17 @@ import * as lodash from 'lodash';
 })
 export class EducationSectionComponent implements OnInit {
   public educationHistory: TimelineItem[] = [{
+    timestamp: 'september 2020 - now',
+    header: "FIIT STU",
+    message: 'Masters degree'
+  },{
     timestamp: 'september 2017 - june 2020',
     header: "FIIT STU",
-    message: "Lorem ipsum"
+    message: "Bachelors degree"
   }, {
     timestamp: 'september 2013 - june 2017',
-    header: "Gymnázium Dominika Tatarku, Poprad",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: 'september 2017 - june 2020',
-    header: "FIIT STU",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: 'september 2013 - june 2017',
-    header: "Gymnázium Dominika Tatarku, Poprad",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: 'september 2017 - june 2020',
-    header: "FIIT STU",
-    message: "Lorem ipsum"
-  }, {
-    timestamp: 'september 2013 - june 2017',
-    header: "Gymnázium Dominika Tatarku, Poprad",
-    message: "Lorem ipsum"
+    header: "Gymnázium Dominika Tatarku",
+    message: "Higher secondary education"
   }];
 
   public timelineOrientation: TimelineOrientation = TimelineOrientation.VERTICAL_RIGHT;

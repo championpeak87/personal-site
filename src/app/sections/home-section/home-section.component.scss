@@ -10,9 +10,14 @@
         box-shadow: 0px 0px 100px 100px #282a35 inset;
         opacity: 0.3;
     }
-    background: url(../../../assets/profile_background.png);
+    background: url(../../../assets/profile_background.png) no-repeat;
     width: 600px;
     height: 900px;
+    @media screen and (max-width: 1100px) {
+        background-size: 400px;
+        width: 400px;
+        height: 600px;
+    }
 }
 
 app-header-name {

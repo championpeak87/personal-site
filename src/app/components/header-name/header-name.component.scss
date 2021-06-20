@@ -9,22 +9,35 @@
     @media (prefers-color-scheme: dark) {
         color: #a6bfd6;
     }
+    @media screen and (max-width: 1100px) {
+        font-size: 32px;
+    }
 }
 
 .subheader-container,
 .subheader {
     font-size: 32px;
     font-weight: 400;
+    @media screen and (max-width: 1100px) {
+        font-size: 16px;
+    }
 }
 
 .subheader-container {
     margin: 10px 20px;
+    @media screen and (max-width: 1100px) {
+        margin: 0px 20px;
+    }
     margin-bottom: 0px;
 }
 
 .subheader {
     display: inline-block;
     color: #0563bb;
+}
+
+h2 {
+    margin: 0px 0px;
 }
 
 @keyframes flex-char {

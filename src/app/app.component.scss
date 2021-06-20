@@ -1,7 +1,7 @@
 app-nav-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 100px;
     z-index: 2;
     position: fixed;
@@ -12,9 +12,6 @@ app-nav-bar {
 
     @media screen and (max-width: 1100px) {
         flex-direction: row;
-        top: 0;
-        left: 0;
-        right: 0;
         width: 100%;        
     }
 
@@ -29,12 +26,15 @@ article > * {
 
 article { 
     @media screen and (max-width: 1100px) {
-        padding-top: 95px;
+        padding-top: 75px;
     }
 }
 
 #home {
     height: 900px;
+    @media screen and (max-width: 1100px) {
+        height: 600px;
+    }
 }
 
 #about {
