@@ -14,7 +14,6 @@ export class TimelineItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("BAR POSITION " + this.barPosition);
   }
 
 }
