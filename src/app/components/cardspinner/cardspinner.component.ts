@@ -9,7 +9,7 @@ import { CardItem } from '../itemcard/card-item';
 export class CardspinnerComponent implements OnInit {
   @Input('items') items: CardItem[] = [{
     header: "CMSimulator",
-    description: "An android app for language simulation",
+    description: "An android app for formal language simulation",
     link: "https://github.com/klihan/cmsimulator",
     img: "../../../assets/cmsimulator.png",
     in_development: false

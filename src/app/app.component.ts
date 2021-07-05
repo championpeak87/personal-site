@@ -36,8 +36,16 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/']);
     }
 
+    else if (home_pos.top < window.innerHeight && home_pos.bottom >= 0) {
+      this.router.navigate(['/']);
+    }
+
     // checking about section
     else if (about_pos.top >= 0 && about_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/about']);
+    }
+
+    else if (about_pos.top < window.innerHeight && about_pos.bottom >= 0) {
       this.router.navigate(['/about']);
     }
 
@@ -46,8 +54,16 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/edu']);
     }
 
+    else if (edu_pos.top < window.innerHeight && edu_pos.bottom >= 0) {
+      this.router.navigate(['/edu']);
+    }
+
     // checking projects section
     else if (projects_pos.top >= 0 && projects_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/projects']);
+    }
+
+    else if (projects_pos.top < window.innerHeight && projects_pos.bottom >= 0) {
       this.router.navigate(['/projects']);
     }
 
@@ -56,8 +72,16 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/dev']);
     }
 
+    else if (dev_pos.top < window.innerHeight && dev_pos.bottom >= 0) {
+      this.router.navigate(['/dev']);
+    }
+
     // checking contact section
     else if (contact_pos.top >= 0 && contact_pos.bottom <= window.innerHeight) {
+      this.router.navigate(['/contact']);
+    }
+
+    else if (contact_pos.top < window.innerHeight && contact_pos.bottom >= 0) {
       this.router.navigate(['/contact']);
     }
   }
