@@ -3,4 +3,5 @@ export interface CardItem {
     description: string;
     link: string;
     img: string;
+    in_development: boolean;
 }

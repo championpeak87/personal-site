@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CardItem } from './card-item';
 
 @Component({
@@ -9,9 +10,13 @@ import { CardItem } from './card-item';
 export class ItemcardComponent implements OnInit {
   @Input('item') item: CardItem;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public openProject(item: CardItem) {
+    window.location.href = item.link;
   }
 
 }

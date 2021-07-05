@@ -1,12 +1,15 @@
 <div class="itemcard">
-    <a [href]="item.link" class="itemcard-wrapper" target="_blank">
-        <div class="itemcard-frontsize">
+    <div class="itemcard-wrapper">
+        <div class="itemcard-front">
             <img [src]="item.img">
         </div>
-        <div class="itemcard-backside">
+        <div matRipple class="itemcard-back" (click)="openProject(item)">
             <img [src]="item.img">
-            <h1 class="itemcard-header">{{ item.header }}</h1>
-            <p class="itemcard-description">{{ item.description }}</p>
+            <div [ngClass]="item.in_development ? 'itemcard-developmentdescription' : 'itemcard-description'"></div>
+            <div class="itemcard-backcontent">
+                <h1>{{ item.header }}</h1>
+                <p >{{ item.description }}</p>
+            </div>
         </div>
-    </a>
+    </div>
 </div>
