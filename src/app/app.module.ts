@@ -18,8 +18,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ItemcardComponent } from './components/itemcard/itemcard.component';
+import { CardspinnerComponent } from './components/cardspinner/cardspinner.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     EducationSectionComponent,
     HorizontalSplitComponent,
     TimelineItemComponent,
-    TimelineComponent
+    TimelineComponent,
+    ItemcardComponent,
+    CardspinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

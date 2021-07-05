@@ -1,0 +1,12 @@
+<div class="itemcard">
+    <a [href]="item.link" class="itemcard-wrapper" target="_blank">
+        <div class="itemcard-frontsize">
+            <img [src]="item.img">
+        </div>
+        <div class="itemcard-backside">
+            <img [src]="item.img">
+            <h1 class="itemcard-header">{{ item.header }}</h1>
+            <p class="itemcard-description">{{ item.description }}</p>
+        </div>
+    </a>
+</div>
