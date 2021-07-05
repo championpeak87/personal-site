@@ -11,12 +11,12 @@ import * as lodash from 'lodash';
 export class EducationSectionComponent implements OnInit {
   public educationHistory: TimelineItem[] = [{
     timestamp: 'september 2020 - now',
-    header: "FIIT STU",
-    message: 'Masters degree'
+    header: "Faculty of Informatics and Information Technologies, Slovak University of Technology",
+    message: 'Masters degree, Study programme: Intelligent software systems'
   },{
     timestamp: 'september 2017 - june 2020',
-    header: "FIIT STU",
-    message: "Bachelors degree"
+    header: "Faculty of Informatics and Information Technologies, Slovak University of Technology",
+    message: "Bachelors degree, Study programme: Computer sciences"
   }, {
     timestamp: 'september 2013 - june 2017',
     header: "Gymnázium Dominika Tatarku",

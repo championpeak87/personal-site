@@ -25,15 +25,11 @@
     }
 
     &-horizontal {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-
         overflow-x: scroll;
 
         &bar {
             height: 3px;
+            width: 1775px;
             @media (prefers-color-scheme: dark) {
                 background: linear-gradient(to right, transparent 0%, #f5f4f1 10%, #f5f4f1 90%, transparent 100%);
             }
@@ -41,10 +37,11 @@
                 background: linear-gradient(to right, transparent 0%, #575b74 10%, #575b74 90%, transparent 100%);
             }
             border-radius: 3px;
-            margin: 10px 100px;
+            margin: 10px 0px;
 
+            display: block;
             position: absolute;
-            width: 175%;
+
             top: 0;
         }
 

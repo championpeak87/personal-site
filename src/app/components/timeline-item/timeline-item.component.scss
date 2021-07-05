@@ -6,9 +6,10 @@
     align-items: center;
     transition: ease 0.5s background-color;
 
+    position: relative;
     width: 500px;
     @media screen and (max-width: 1100px) {
-        width: 200px;
+        width: 100%;
         
     }
     @media (prefers-color-scheme: dark) {
@@ -37,14 +38,16 @@
     }
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
         sans-serif;
-    padding: 5px 0px;
+    padding: 25px;
 }
 
 .left {
     &-triangle {
         height: 0px;
         width: 0px;
-        transform: translateX(-40px);
+        position: absolute;
+        left: -20px;
+        // transform: translateX(-40px);
         @media (prefers-color-scheme: dark) {
             border-right: 20px solid #f5f4f1;
         }
@@ -66,7 +69,9 @@
         width: 20px;
         border-radius: 50%;
 
-        transform: translateX(-71px);
+        position: absolute;
+        left: -71px;
+        // transform: translateX(-71px);
     }
 }
 
@@ -102,10 +107,13 @@
 
 .upper {
     &-triangle {
+        position: absolute;
         height: 0px;
         width: 0px;
         align-self: flex-start;
-        transform: translate(200px, -20px);
+        left: 200px;
+        top: -20px;
+        // transform: translate(200px, -20px);
         @media (prefers-color-scheme: dark) {
             border-bottom: 20px solid #f5f4f1;
         }
@@ -124,11 +132,15 @@
         @media (prefers-color-scheme: light) {
             background-color: #575b74;
         }
+        background-color: red;
+        position: absolute;
         height: 20px;
         width: 20px;
         border-radius: 50%;
 
-        transform: translate(231px, -68px);
+        left: 210px;
+        top: -68px;
+        // transform: translate(231px, -68px);
     }
 }
 
