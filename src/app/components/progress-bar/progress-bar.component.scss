@@ -1,17 +1,19 @@
 .progressbar {
-  &-wrapper {
-
-  }
-
   &-barparent {
     display: inline-block;
     width: 80%;
+    position: relative;
+    height: 7px;
   }
 
   &-fillpart,
   &-remainingpart {
     display: inline-block;
     height: 7px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
 
   &-fillpart {
@@ -23,16 +25,40 @@
       background: linear-gradient(to right, #c3c3c2 75%, #888888);
       box-shadow: 2px 2px 5px -2px black;
     }
+    width: 0%;
     border-radius: 5px;
+    z-index: 1;
   }
 
   &-remainingpart {
-    background-color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transform: translateX(-2px);
+    position: absolute;
+    @media (prefers-color-scheme: dark) {
+      background-color: lightgray;
+    }
+    @media (prefers-color-scheme: light) {
+      background-color: #3a3c4e;
+    }
+    border-radius: 5px;
+    right: 0;
+    width: 100%;
+    z-index: 0;
   }
 
-  &-percentage {
+  &-percentage > b {
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+
+  &-animation {
+    animation: progressbar-loadup 2s ease 0.5s forwards;
+  }
+}
+
+@keyframes progressbar-loadup {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

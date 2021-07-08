@@ -3,4 +3,6 @@ export interface ItemcardWideItem {
     header: string;
     description: string;
     percentage: number;
+    experience: string;
+    features: string[];
 }

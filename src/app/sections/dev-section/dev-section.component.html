@@ -6,32 +6,35 @@
   <app-horizontal-split></app-horizontal-split>
 
   <h2>Web technologies</h2>
-  <div class="web-content">
+  <div class="web-content" id="websection">
     <app-itemcard-wide
       *ngFor="let item of devstackWebItems; let i = index"
       [attr.data-index]="i"
       [position]="i % 2 == 0 ? 'RIGHT' : 'LEFT'"
       [item]="item"
+      [animate]="webAnimation"
     ></app-itemcard-wide>
   </div>
 
   <h2>Mobile technologies</h2>
-  <div class="web-content">
+  <div class="web-content" id="mobilesection">
     <app-itemcard-wide
       *ngFor="let item of devstackMobileItems; let i = index"
       [attr.data-index]="i"
       [position]="i % 2 == 0 ? 'RIGHT' : 'LEFT'"
       [item]="item"
+      [animate]="mobileAnimation"
     ></app-itemcard-wide>
   </div>
 
   <h2>Other</h2>
-  <div class="web-content">
+  <div class="web-content" id="othersection">
     <app-itemcard-wide
       *ngFor="let item of devstackOtherItems; let i = index"
       [attr.data-index]="i"
       [position]="i % 2 == 0 ? 'RIGHT' : 'LEFT'"
       [item]="item"
+      [animate]="otherAnimation"
     ></app-itemcard-wide>
   </div>
 </div>

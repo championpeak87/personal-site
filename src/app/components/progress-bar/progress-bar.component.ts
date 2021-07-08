@@ -1,5 +1,4 @@
-import { Component, Inject, Input, OnInit, ViewChild } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar',
@@ -8,14 +7,9 @@ import { DOCUMENT } from '@angular/common';
 })
 export class ProgressBarComponent implements OnInit {
   @Input('percentage') public percentage: number;
-
-  constructor(@Inject(DOCUMENT) document) { }
+  @Input('animate') public animate: boolean = false;
 
   ngOnInit(): void {
-    const unique = this.constructor['ɵcmp'].id;
-    console.log("SETTING WIDTH: " + this.percentage.toString());
-    document.getElementById(unique).style.width = this.percentage.toString() + '%';
-    console.log("NEW WIDTH: " + document.getElementById('fillpart').style.width);
   }
 
 }
