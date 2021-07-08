@@ -1,0 +1,38 @@
+.progressbar {
+  &-wrapper {
+
+  }
+
+  &-barparent {
+    display: inline-block;
+    width: 80%;
+  }
+
+  &-fillpart,
+  &-remainingpart {
+    display: inline-block;
+    height: 7px;
+  }
+
+  &-fillpart {
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(to right, #575b74 75%, #3a3c4d);
+      box-shadow: 2px 2px 5px -2px black;
+    }
+    @media (prefers-color-scheme: light) {
+      background: linear-gradient(to right, #c3c3c2 75%, #888888);
+      box-shadow: 2px 2px 5px -2px black;
+    }
+    border-radius: 5px;
+  }
+
+  &-remainingpart {
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(-2px);
+  }
+
+  &-percentage {
+  }
+}

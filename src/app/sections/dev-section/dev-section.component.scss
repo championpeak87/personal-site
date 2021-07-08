@@ -1,41 +1,58 @@
 .header {
-    text-align: center;
-    font-size: 3em;
-    @media screen and (max-width: 1100px) {
-        font-size: 1.5em;
-    }
+  text-align: center;
+  font-size: 3em;
+  @media screen and (max-width: 1100px) {
+    font-size: 1.5em;
+  }
 }
 
 .header i {
-    @media (prefers-color-scheme: dark) {
-        color: white;
-    }
-    @media (prefers-color-scheme: light) {
-        color: #45505b;
-    }
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+  @media (prefers-color-scheme: light) {
+    color: #45505b;
+  }
 }
 
 .header i::after {
-    content: '   ';
+  content: "   ";
 }
 
 .wrapper {
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 {
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    // font-size: 3em;
-    display: inline-block;
-    padding-top: 20px;
-    @media (prefers-color-scheme: dark) {
-        color: white;
-    }
-    @media (prefers-color-scheme: light) {
-        color: #45505b;
-    }
-    margin-bottom: 20px;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  // font-size: 3em;
+  display: inline-block;
+  padding-top: 20px;
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+  @media (prefers-color-scheme: light) {
+    color: #45505b;
+  }
+  margin-bottom: 20px;
+}
+
+.web-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  gap: 50px;
+
+  margin: 5px 50px;
+}
+
+h2 {
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+  @media (prefers-color-scheme: light) {
+    color: #45505b;
+  }
 }

@@ -88,6 +88,6 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
     AOS.init();
-    window.addEventListener("scroll", lodash.throttle(this.scroll, 50), true);
+    window.addEventListener("scroll", lodash.throttle(this.scroll, 100), true);
   }
 }

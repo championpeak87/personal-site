@@ -24,6 +24,8 @@ import {MatRippleModule} from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ItemcardComponent } from './components/itemcard/itemcard.component';
 import { CardspinnerComponent } from './components/cardspinner/cardspinner.component';
+import { ItemcardWideComponent } from './components/itemcard-wide/itemcard-wide.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { CardspinnerComponent } from './components/cardspinner/cardspinner.compo
     TimelineItemComponent,
     TimelineComponent,
     ItemcardComponent,
-    CardspinnerComponent
+    CardspinnerComponent,
+    ItemcardWideComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

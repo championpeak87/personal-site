@@ -1,0 +1,9 @@
+<div class="itemcard-wrapper">
+  <img class="itemcard-leftlogo" *ngIf="position == 'LEFT'" [src]="item.img" />
+  <div class="itemcard-content">
+    <h2>{{ item.header }}</h2>
+    <p>{{ item.description }}</p>
+    <app-progress-bar [percentage]="item.percentage"></app-progress-bar>
+  </div>
+  <img class="itemcard-rightlogo" *ngIf="position == 'RIGHT'" [src]="item.img" />
+</div>
