@@ -7,6 +7,9 @@
     align-items: stretch;
 
     width: 100%;
+    @media screen and (max-width: 1100px) {
+      width: 90%;
+    }
     padding: 10px 20px;
 
     border-radius: 5px;
@@ -20,12 +23,27 @@
       box-shadow: 5px 5px 12px -2px gray;
       color: #45505b;
     }
+
+    transition: ease 0.8s transform;
+    user-select: none;
+    z-index: 0;
+  }
+
+  &-wrapper:hover {
+    transform: scale(1.05);
+    z-index: 1;
   }
 
   &-leftlogo,
   &-rightlogo {
-    height: 100%;
-    max-height: 150px;
+    height: 100px;
+    // max-height: 150px;
+    max-width: 20%;
+    margin: auto 10px;
+  }
+
+  &-content {
+    width: 70%;
   }
 }
 
