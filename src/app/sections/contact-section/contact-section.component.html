@@ -1,49 +1,102 @@
 <div class="wrapper">
-    <div class="header">
-        <i class="bi bi-phone"></i>
-        <h1 i18n="contact header|Header in contact section@@contact-head">Contact me</h1>
-        <div class="horizontal-split"></div>
+  <div class="header">
+    <i class="bi bi-phone"></i>
+    <h1 i18n="contact header|Header in contact section@@contact-head">
+      Contact me
+    </h1>
+    <div class="horizontal-split"></div>
+  </div>
+  <div class="content">
+    <div class="contact-wrapper">
+      <ul>
+        <li>
+          <i class="bi bi-telephone"></i>
+          <span>
+            <b>Phone: </b>
+            <a href="tel:+421907106895">+421 907 106 895</a>
+          </span>
+        </li>
+        <li>
+          <i class="bi bi-envelope"></i>
+          <span>
+            <b>Email: </b
+            ><a href="mailto:k.lihan@outlook.com">k.lihan@outlook.com</a>
+          </span>
+        </li>
+        <li>
+          <i class="bi bi-github"></i>
+          <span>
+            <b>Github: </b
+            ><a href="http://github.com/klihan">github.com/klihan</a>
+          </span>
+        </li>
+      </ul>
     </div>
     <div class="form-wrapper">
-        <h1>Contact form</h1>
-        <hr>
-        <form (ngSubmit)="onSubmit()" [formGroup]="contactFormGroup" id="contact-form">
-            <div class="form-content">
-                <div class="message-split">
-                    <div class="name-wrapper">
-                        <mat-form-field appearance="fill" [color]="'#575b74'" id="name">
-                            <mat-label>Name</mat-label>
-                            <input matInput type="text" formControlName="name" required>
-                            <mat-error>Name is required</mat-error>
-                        </mat-form-field>
+      <h1>Contact form</h1>
+      <hr />
+      <form
+        (ngSubmit)="onSubmit()"
+        [formGroup]="contactFormGroup"
+        id="contact-form"
+      >
+        <div class="form-content">
+          <div class="message-split">
+            <div class="name-wrapper">
+              <mat-form-field appearance="fill" [color]="'#575b74'" id="name">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" formControlName="name" required />
+                <mat-error>Name is required</mat-error>
+              </mat-form-field>
 
-                        <mat-form-field appearance="fill" [color]="'#575b74'" id="lastname">
-                            <mat-label>Last name</mat-label>
-                            <input matInput type="text" formControlName="lastname" required>
-                            <mat-error>Last name is required</mat-error>
-                        </mat-form-field>
-                    </div>
-
-                    <div class="email-container">
-                        <mat-form-field appearance="fill" [color]="'#575b74'" id="email">
-                            <mat-label>Email</mat-label>
-                            <input matInput type="text" formControlName="email" required>
-                            <mat-error>Email is required</mat-error>
-                        </mat-form-field>
-                    </div>
-                </div>
-
-                <mat-form-field appearance="fill" [color]="'pink'" id="message">
-                    <mat-label>Message</mat-label>
-                    <textarea matInput type="text" formControlName="message" required></textarea>
-                    <mat-error>Message is required</mat-error>
-                </mat-form-field>
+              <mat-form-field
+                appearance="fill"
+                [color]="'#575b74'"
+                id="lastname"
+              >
+                <mat-label>Last name</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  formControlName="lastname"
+                  required
+                />
+                <mat-error>Last name is required</mat-error>
+              </mat-form-field>
             </div>
-            <div class="form-controls">
-                <mat-spinner *ngIf="loading" [diameter]="20" style="margin: 10px;"></mat-spinner>
-                <span *ngIf="sent" style="margin: 10px;"><i class="bi bi-check-lg"></i>Message has been sent!</span>
-                <button type="submit">Send</button>
+
+            <div class="email-container">
+              <mat-form-field appearance="fill" [color]="'#575b74'" id="email">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email" required />
+                <mat-error>Email is required</mat-error>
+              </mat-form-field>
             </div>
-        </form>
+          </div>
+
+          <mat-form-field appearance="fill" [color]="'pink'" id="message">
+            <mat-label>Message</mat-label>
+            <textarea
+              matInput
+              type="text"
+              formControlName="message"
+              required
+            ></textarea>
+            <mat-error>Message is required</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="form-controls">
+          <mat-spinner
+            *ngIf="loading"
+            [diameter]="20"
+            style="margin: 10px"
+          ></mat-spinner>
+          <span *ngIf="sent" style="margin: 10px"
+            ><i class="bi bi-check-lg"></i>Message has been sent!</span
+          >
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
