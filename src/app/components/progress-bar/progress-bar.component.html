@@ -1,7 +1,17 @@
 <div class="progressbar-wrapper">
-    <span class="progressbar-barparent">
-        <span class="progressbar-fillpart" [style.max-width]="percentage + '%'" [ngClass]="animate ? 'progressbar-fillpart progressbar-animation' : 'progressbar-fillpart'"></span>
-        <span class="progressbar-remainingpart"></span>
-    </span>
-    <span class="progressbar-percentage"><b>{{ percentage }} %</b></span>
+  <span class="progressbar-barparent">
+    <span
+      class="progressbar-fillpart"
+      [style.max-width]="percentage + '%'"
+      [ngClass]="
+        animate
+          ? 'progressbar-fillpart progressbar-animation'
+          : 'progressbar-fillpart'
+      "
+    ></span>
+    <span class="progressbar-remainingpart"></span>
+  </span>
+  <span class="progressbar-percentage"
+    ><b>{{ percentage }} %</b></span
+  >
 </div>
