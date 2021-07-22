@@ -177,12 +177,12 @@ textarea {
   left: 0;
   bottom: -2px;
 
+  background-color: white;
   transition: ease 1s width;
 }
 
 .contact-wrapper a:hover::after {
   width: 100%;
-  background-color: white;
 }
 
 .contact-wrapper ul {
